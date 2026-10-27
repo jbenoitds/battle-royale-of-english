@@ -1,0 +1,110 @@
+# Ultimate Mission quest. Written by hand (Bundle 5, 2026-10-25) to be coherent with the map:
+# each riddle describes what you see at the place, the hints point to the right zone, the boss waits at 'boss_location'.
+# Rules: 'search_spots' <= 4; data_id = 2 digits and the file must be named data<id>.py; locations/zones = modulesu/locations_coordinates.py;
+# items = file names in files/items; enemies = files/new_enemies (<group><number>), tags = sound groups in files/sound_enemy.
+
+data_all_else = {'data_id': 10,
+ 'quest_title': 'La Quête des Pieds qui Puent',
+ 'enemy_spots': 3,
+ 'boss': 'ju1',
+ 'enemy1': 'ju2',
+ 'enemy2': 'ju3',
+ 'enemy3': 'ju4',
+ 'enemy4': 'ju5',
+ 'enemy5': 'ju6',
+ 'search_spots': 2,
+ 'decoy': 'taehc',
+ 'edoc': 'savons',
+ 'd_trap_pool': 'library',
+ 'd_shield_pool': 'parc',
+ 'd_search_pool': 'school',
+ 'd_enemy_pool': 'school',
+ 'd_boss_pool': 'grocerie',
+ 'boss_location': 'iga',
+ 'd_spec_location1': 'ctire',
+ 'item1': 'bucket',
+ 'fake1item1': 'hammer',
+ 'fake2item1': 'broom',
+ 'position_item1': (330, 330),
+ 'position_fake1item1': (520, 300),
+ 'position_fake2item1': (720, 340),
+ 'd_spec_location2': 'watergames',
+ 'item2': 'sponge',
+ 'fake1item2': 'shoe',
+ 'fake2item2': 'hat',
+ 'position_item2': (720, 320),
+ 'position_fake1item2': (330, 340),
+ 'position_fake2item2': (520, 300),
+ 'd_spec_location3': 'none',
+ 'item3': 'none',
+ 'fake1item3': 'none',
+ 'fake2item3': 'none',
+ 'position_item3': (520, 330),
+ 'position_fake1item3': (720, 300),
+ 'position_fake2item3': (330, 320),
+ 'd_spec_location4': 'none',
+ 'item4': 'none',
+ 'fake1item4': 'none',
+ 'fake2item4': 'none',
+ 'position_item4': (330, 330),
+ 'position_fake1item4': (520, 300),
+ 'position_fake2item4': (720, 340),
+ 'd_spec_location5': 'none',
+ 'item5': 'none',
+ 'fake1item5': 'none',
+ 'fake2item5': 'none',
+ 'position_item5': (720, 320),
+ 'position_fake1item5': (330, 340),
+ 'position_fake2item5': (520, 300),
+ 'tag1': 'ju',
+ 'tag2': 'ju',
+ 'tag3': 'ju',
+ 'tag4': 'ju',
+ 'tag5': 'ju',
+ 'tagboss': 'ju'}
+
+data_all_texts = {'enemy_text1': "BECAUSE I'M BATMAN !!! J'ai perdu les clés de la Batmobile et aucun Batbus ne passe ici, alors je batmarche et je suis batfatigué. Et je "
+                "protège Superman, même s'il pue des pieds ! (Ctrl + 1, 2 ou 3, puis '1.', '2.' ou '3.' et la phrase)",
+ 'enemy_text2': "Je suis Cyborg, un robot super pratique : 3 + 2 = 3 + 2 ! Je suis à moitié humain, donc je récite l'alphabet en rotant. Mon nez est 100 % "
+                "robot : les pieds de Superman, je ne les sens pas ! (Ctrl + 1, 2 ou 3, puis '1.', '2.' ou '3.' et la phrase)",
+ 'enemy_text3': "Regarde comme je cours vite ! Fiou ! T'as vu ? Non ? C'est parce que je suis Flash et que je cours super vite... encore plus vite que l'odeur "
+                "des pieds de Superman ! (Ctrl + 1, 2 ou 3, puis '1.', '2.' ou '3.' et la phrase)",
+ 'enemy_text4': "Aquaman sort de l'eau : il a l'habitude des odeurs de poisson, alors les pieds de Superman ne lui font pas peur ! (Ctrl + 1, 2 ou 3, puis "
+                "'1.', '2.' ou '3.' et la phrase)",
+ 'enemy_text5': "Wonder Woman fait tourner son lasso : elle veut protéger Superman... en se pinçant le nez. (Ctrl + 1, 2 ou 3, puis '1.', '2.' ou '3.' et la "
+                'phrase)',
+ 'boss_text': "Je suis Super, je suis un Man, je suis SUPERMAN ! J'ai une cape rouge, je mets mon slip par-dessus mon pantalon, et mes bottes, je les enlève "
+              "quand je veux ! (Ctrl + 1, 2 ou 3, puis '1.', '2.' ou '3.' et la phrase)",
+ 'boss_netext': "NOOOOOOOOON, c'est toi le SuperFighter ! D'accord, d'accord... passe-moi le seau et l'éponge, je vais me laver les pieds.",
+ 'enemy_position': "Moi je sais madame, ça fait 12 ! Quoi ? La réponse était Jacques Cartier ? (Psst... les amis de Superman se cachent du côté de l'école.)",
+ 'boss_position': "Vite, il me faut du savon et du papier Q ! Superman fait ses courses au supermarché, devant la grande porte d'entrée.",
+ 'text_all': "Superman a retiré ses bottes et ses pieds puent tellement que tout le quartier s'évanouit ! 1) trouvez un seau et une éponge ('énigme1', "
+             "'énigme2') ; 2) battez ses amis de la Ligue près de l'école ; 3) affrontez Superman au supermarché.",
+ 'text_1': "Il reste : 1) trouvez un seau et une éponge ('énigme1', 'énigme2').",
+ 'text_2': "Il reste : 2) battez ses amis de la Ligue près de l'école.",
+ 'text_3': 'Il reste : 3) affrontez Superman au supermarché.',
+ 'text_12': "Il reste : 1) trouvez un seau et une éponge ('énigme1', 'énigme2') ; 2) battez ses amis de la Ligue près de l'école.",
+ 'text_13': "Il reste : 1) trouvez un seau et une éponge ('énigme1', 'énigme2') ; 3) affrontez Superman au supermarché.",
+ 'text_23': "Il reste : 2) battez ses amis de la Ligue près de l'école ; 3) affrontez Superman au supermarché.",
+ 'text_finish': 'Superman se lave enfin les pieds. Le quartier se réveille et respire à nouveau. Mission accomplie !',
+ 'search_riddle1': "Énigme 1 : Trouvez le grand magasin où l'on achète des outils, de la peinture et des pneus. Au-dessus de la porte : un triangle rouge avec "
+                   "une feuille d'érable. Ce qu'il faut pour porter de l'eau vous y attend.",
+ 'init_search_text1': "Vous êtes au magasin de bricolage. Trois objets devant vous : lequel peut transporter assez d'eau pour laver des pieds qui puent ? "
+                      'Tapez son nom en français puis Entrée.',
+ 'search_text1': "C'est bien le seau ! Mais il est coincé derrière un cadenas magique. Écoutez la phrase avec Ctrl + 1 et tapez-la pour le libérer.",
+ 'search_riddle2': "Énigme 2 : Au parc, des jets d'eau sortent du sol, à côté d'une ancre géante et d'une voile. Ici, on se mouille en s'amusant... et "
+                   "quelqu'un y a oublié de quoi frotter.",
+ 'init_search_text2': "Vous êtes aux jeux d'eau. Trois objets traînent par terre : lequel est doux, jaune et vert, et frotte très bien ? Tapez son nom en "
+                      'français puis Entrée.',
+ 'search_text2': "L'éponge ! Elle est toute mouillée et glisse entre vos doigts. Écoutez la phrase avec Ctrl + 1 et tapez-la pour l'attraper.",
+ 'search_riddle3': '',
+ 'init_search_text3': '',
+ 'search_text3': '',
+ 'search_riddle4': '',
+ 'init_search_text4': '',
+ 'search_text4': '',
+ 'search_riddle5': '',
+ 'init_search_text5': '',
+ 'search_text5': ''}
+
+data_all = {**data_all_else, **data_all_texts}

@@ -1,0 +1,31 @@
+# Backups and personal notes: keep them out of the public repository
+*.rar
+handoff.md
+# Python cache
+__pycache__/
+*.pyc
+# Player progress (created by the game)
+**/files/saves/quests_played.txt
+
+# Private backup of the original (non-anonymized) French pictures
+_PRIVATE_original_photos_DO_NOT_SHARE/
+
+# Not part of the public game (removed level h = the house, private or unused files)
+**/files/images_oth/finalh.png
+**/files/images_oth/starth.png
+**/files/images_oth/ordi.jpg
+**/files/images_oth/ordif.jpg
+**/files/images_oth/perso.png
+**/files/images_oth/perso_.png
+**/files/loader/loaderh.png
+**/files/sound/missionh/
+**/files/background/missionh/
+**/files/score/score.docx
+**/files/sound/mission1/1.mp3
+**/files/sound/mission1/2.mp3
+**/files/sound/mission1/3.mp3
+**/files/sound/mission1/4.mp3
+**/files/sound/mission3/road-runner-101soundboards (Copy).mp3
+**/modules3/*-jbenoitds.py
+**/zz_fortwrite.py
+**/myrks.py

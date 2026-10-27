@@ -1,0 +1,49 @@
+# Zones
+neighbor
+school
+grocerie
+library
+parc
+
+# Locations
+home
+pub
+foot
+school 
+schoolyard
+barber
+fire
+dollar_store
+daycare
+pawnshop
+corner_store
+grocery
+pharm
+hardware
+office
+library
+police
+skate
+watergames
+baseball
+pirateparc
+
+friend1
+friend2
+friend3
+
+# details
+school is the school entrance
+fire is the fire station
+dollar_store is a dollar store
+pawnshop is a pawn shop
+corner_store is a corner store
+grocery is a grocery store
+pharm is a pharmacy
+office is an office supply store
+hardware is a hardware store
+skate is a skatepark
+watergames are in the parc
+baseball is a baseball field
+pirate parc is a pirate-themed children parc
+friend1, friend2 and friend3 are the houses of 3 friends of the player

@@ -1,0 +1,18 @@
+Être au présent; je suis tu es 
+Être à l'imparfait; j'étais tu étais 
+Être au futur simple; je serai tu seras 
+Avoir au présent; j'ai tu as 
+Avoir à l'imparfait; j'avais tu avais 
+Avoir au futur simple; j'aurai tu auras 
+Aller au présent; je vais tu vas 
+Aller à l'imparfait; j'allais tu allais 
+Aller au futur simple; j'irai tu iras 
+Faire au présent; je fais tu fais 
+Faire à l'imparfait; je faisais tu faisais 
+Faire au futur simple; je ferai tu feras 
+Vouloir au présent; je veux tu veux 
+Vouloir à l'imparfait; je voulais tu voulais 
+Vouloir au futur simple; je voudrai tu voudras 
+Venir au présent; je viens tu viens 
+Venir à l'imparfait; je venais tu venais 
+Venir au futur simple; je viendrai tu viendras 

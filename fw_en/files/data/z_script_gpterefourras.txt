@@ -1,0 +1,231 @@
+# Errors:
+# - 'edoc': 'ninja': not 6 characters
+# - 'position_fake2item4': (1000, 550): width not between 100 and 900
+# - maybe one riddle for location and another for objects
+# - force at least 2-3 searches? or keep that for an escape mode
+# - decide the score system
+
+Python pygame project:
+
+I wrote a game in python with pygame, and I made it very modulable, in the sense that I can feed the script a file with variables, and it will update a lot of functions and elements of the game. That's where you come in.
+
+First off, here are a few list I need you to memorize, that will come into play later.
+
+(###Feed the y_codes.txt)
+(###Feed the y_items.txt)
+(###Feed the y_zones_locations.txt)
+
+Look through these lists and design a theme for a quest, from the enemies groups and names, the available items and the available locations. It will have 3 objectives: a certain amount of enemies specified later, a certain amount of searches specified later and a boss.
+
+Now, I need you to generate the following elements, in the form of a data_all dictionary, so exactly in the following format:
+
+Please always remember that I give you the instruction in English, but I want you to write everything in English, using simple words for kids aged 7 to 9.
+
+data_all_else = {
+    # Data ID
+    'data_id': ,
+    'quest_title': "",
+
+    # Number of Enemies
+    'enemy_spots': ,
+
+    # ID of Boss
+    'boss': "",
+
+    # ID of Enemies
+    'enemy1': "",
+    'enemy2': "",
+    'enemy3': "",
+    'enemy4': "",
+    'enemy5': "",
+
+    # Number of Events
+    'search_spots': ,
+
+    # Text (cheat code, level code): 6 characters
+    'decoy': "",
+    'edoc': "",
+
+    # Zones 
+    'd_trap_pool': "",
+    'd_shield_pool': "",
+    'd_search_pool': "",
+    'd_enemy_pool': "",
+    'd_boss_pool': "",
+
+    # Specific searches locations
+    'd_spec_location1': "",
+    'd_spec_location2': "",
+    'd_spec_location3': "",
+    'd_spec_location4': "",
+    'd_spec_location5': "",
+
+    # Specific real items
+    'item1': "",
+    'item2': "",
+    'item3': "",
+    'item4': "",
+    'item5': "",
+
+    # Specific fake1 items
+    'fake1item1': "",
+    'fake1item2': "",
+    'fake1item3': "",
+    'fake1item4': "",
+    'fake1item5': "",
+
+    # Specific fake2 items
+    'fake2item1': "",
+    'fake2item2': "",
+    'fake2item3': "",
+    'fake2item4': "",
+    'fake2item5': "",
+
+    # Specific item position
+    'position_item1': (,),
+    'position_item2': (,),
+    'position_item3': (,),
+    'position_item4': (,),
+    'position_item5': (,),
+
+    # Specific fake1 item position
+    'position_fake1item1': (,),
+    'position_fake1item2': (,),
+    'position_fake1item3': (,),
+    'position_fake1item4': (,),
+    'position_fake1item5': (,),
+
+    # Specific fake2 item position
+    'position_fake2item1': (,),
+    'position_fake2item2': (,),
+    'position_fake2item3': (,),
+    'position_fake2item4': (,),
+    'position_fake2item5': (,),
+
+    # Sound (av, co, db, etc.)
+    'tag1': "",
+    'tag2': "",
+    'tag3': "",
+    'tag4': "",
+    'tag5': "",
+    'tagboss': ""
+}
+
+Here is how you should fill them:
+
+(1.) there will be 3 types of games: full fight: 5 enemies (so 5 enemy_spots), 1 search(so 1 search_spots); full riddles: 5 searches, 1 enemy, mix: enemies + search = 6 in another order (2 and 4, 3 and 3 or 4 and 2)
+(2.) tags are 2 letters meaning a characters group: av: avengers; co: cowboys; dr: dragon ball z; he: my hero academia; ju: justice league; na: naruto; on: one piece; pi: pirates; po: pokemon; ro: roblox; 
+(3.) if the value has quotes (""), it means it had to be a string, else it's an integer
+(4.) enemy number range from 1 to 5, so their str should be tag + number (e.g, av2, co4, dr5)
+(5.) boss number = 1, with same principle with tag (e.g., av1 or dr1)
+(6.) there should be 1 to 3 characters group max
+(7.) insert jokes in some descriptive texts (funny, absurd, or any type of humor, but keep it kids-friendly), maybe 1 out of 2 or 3.
+(8.) you will place hidden real items in specific locations, accompanied with 2 hidden fake items
+(9.) the screen is 1066 pixels in width and 600 in height
+(10.) descriptive texts must be between 50 and 55 words
+(11.) if enemy_spots = 2, fill up to this with something relevant to your story put random valid ones for 3, 4 and 5 as, same for search_spots (if = 4, fill up to this with relevant to story and put random valid one for 5).
+(12.) for positions, fill the non-used with valid coordinates
+
+
+- data_id: start with 11 for this draft    #if we do multiple generation, we'll update
+- enemy_spots: see (1.)
+- boss: choose a group, and use its tag with 1 after, see (5.)
+- enemy1, enemy2, etc.: see (4.) and (6.) and only fill up to enemy_spots with some revelant to your story and put random valid ones to the rest (if enemy_spots = 3, enter random valid ones for enemy4 and enemy5)
+- search_spots: see (1.)
+- decoy: any 6-letter English word
+- edoc: same thing
+- d_trap_pool, d_boss_pool, etc.: these are the zones you're choosing the story to happen, pick 3 among the zone list I gave you, and attribute as such: one for the boss, not to be repeated (says 'library'), one for the traps (say 'school') and a different one for the shields (say 'parc'), then attribute search and enemies among the ones for traps and shields (say 'parc' for searches and 'school' for enemies)
+- d_spec_location1, d_spec_location2, etc. : these are the specific locations you will place hidden items, if it's a 2-search games, use the first 2 for relevant ones to your story and fill rest with random valid ones, see (11.).
+- item1, item2, etc. : these are the real items you will hide in the locations, chose them according your themed-quest (again, if a 4-search games, use the first 4 items with relevant ones to your story and put random valid one in 5th, see (11.)).
+- fake1item1, fake1item2. etc. : these are fake items 1 you will hide with the real ones, fake1item1 goes to same location than item1, fake1item2 than item2, etc. (same rule for non-used, see (11.))
+- fake2item1, fake2item2, etc. : these are fake items 2 you will hide with the real ones, fake2item1 goes to same location than item1 (and fake1item1), fake2item2 than item2 (and fake1item2), etc. (same rule for non-used, see (11.))
+- position_item1, position_item2, etc.: see (9.) and place items between 100 and 900 in width and 50 and 450 in height. Put random valid coordintes for item non used (in a 3-search game: position_item4 and position_item5), see (12.)
+- position_fake1item1, position_fake1item2: same placement rules (and remember that item1, fake1item1 and fake2item1 are on same specific location and must not touch each others), but keep fake1item1 100 pixels apart from item 1 and fake2item1, in height and in width. Also see (12.) for non-used.
+- position_fake2item1, position_fake2item2: same principles as before. Also see (12.) for non-used.
+- tag1, tag2, etc. : repeat the tag you've chosen for enemy1, enemy2, etc. Just the Tag, i.e., 'av' for avenger or 'co' for cowboy Also see (11.) for non-used.
+
+We will do the first draft with mid-level of riddles difficulty, but we might increase difficulty for future generations.
+
+Double check the following: 
+enemy_spots + search_spots = 6, which means that we have a total of 6 events for the two combined (enemy and search)
+descriptive texts must be between 50 and 55 words : enemy_texts, boss_texts, texts, search_riddles, init_search_texts, search_texts
+the number of filled info must match search_spots for d_spec_locations, items, fake1items, fake2items, search_riddles, position_items, position_fake1items, position_fake2items, init_search_texts, search_texts
+the number of filled info must match enemy_spots for enemy_texts, tags
+
+Warning: always use "" for strings, as English text uses a lot of apostrophes (it's, don't).
+
+That's the first part, keep in mind your choice and quest for the second part.
+
+#######
+
+The second part are the texts, I give them to you in another section so that you can focus on giving all of the 300 to 400 characters, and please add their number of characters in a comment one line below.
+
+ALL TEXTS MUST BE BETWEEN 50 and 55 WORDS AND WRITE THE CHARACTER NuMBER IN COMMENT one line below !!!
+
+data_all_texts = {
+
+    # Text (characters): between 50 and 55 words
+    'enemy_text1': "",
+    'enemy_text2': "",
+    'enemy_text3': "",
+    'enemy_text4': "",
+    'enemy_text5': "",
+    'boss_text': "",
+    'boss_netext': "",
+    'enemy_position': "",
+    'boss_position': "",
+    
+    # Text (objectives): between 50 and 55 words
+    'text_all': "",
+    'text_1': "",
+    'text_2': "",
+    'text_3': "",
+    'text_12': "",
+    'text_13': "",
+    'text_23': "",
+    'text_finish': "",
+    
+   # Specific riddles texts: between 50 and 55 words
+    'search_riddle1': "",
+    'search_riddle2': "",
+    'search_riddle3': "",
+    'search_riddle4': "",
+    'search_riddle5': "",
+    
+    # Specific initialize searches texts: between 50 and 55 words
+    'init_search_text1': "",
+    'init_search_text2': "",
+    'init_search_text3': "",
+    'init_search_text4': "",
+    'init_search_text5': "",
+    
+    # Specific searches texts: between 50 and 55 words
+    'search_text1': "",
+    'search_text2': "",
+    'search_text3': "",
+    'search_text4': "",
+    'search_text5': ""
+    }
+
+- enemy_text1, ... : - From the list of enemy group and names, you write there a witty intro / entry text about the chosen character, the text must be between 50 and 55 words long. The boss is always the #1 of each group, so choose your text accordingly. Also see (11.) for non-used.
+- boss_text: create a witty intro / entry text about the boss, the text must be between 50 and 55 words long. The boss is always the #1 of each group, so choose your text accordingly.
+- boss_netext: the boss just got defeated, write a witty text to describe his fall after the long assault of the player (must be between 50 and 55 words long).
+- enemy_position: we need to know in what zone the enemy were placed, so give it but write a little story with it (50 to 55 words), like they're taken control of there for such reason, or they're protecting something, or they're preparing something bad there, or invent something else, etc.
+- boss_position: same, we need to know in what zone the boss was placed, so give it but write a little story with it (50 to 55 words), like the boss has his quarters there because... or he's taken so-and-so captive, or he's hiding there because, or invent something else, etc.
+- text_all: Choose three objectives (1. search-related; 2. enemy-related; 3. boss-related) and write a presentation of the quest introducing the 3 objectives (30 - 40 words), then repeat them abridged (25 - 15 words), the total should not be more than 55 words.
+- text_1, text_2, text_3, text_12, text_13 and text_23: rewrite the same text as text_all, but in the abridged part, only keep objectives that are in the name of variable (1 for text_1, 2 for text_2, 3 for text_3, 1 and 2 for text_12, 1 and 3 for text_13 and 2 and 3 for text_23).
+- text_finish: write a concluding and congratulory text, now that the player completed the 3 objectives and finished the quest
+- search_riddle1, search_riddle2, etc.: write a riddle about an item and a location. Don't specify them but make them possible to deduce (be careful for ambiguity with other items and locations). Also see (11.) for non-used.
+- init_search_text1, init_search_text2, etc.: congratulate the player for finding the right location and item, but now they must write the correct sentence to be able to get it from whatever force is holding them. Also see (11.) for non-used.
+- init_search_text1, init_search_text2, etc.: congratulate the player for finding the right location and item, but now they must write the correct sentence to be able to get it from whatever force is holding them. Also see (11.) for non-used.
+- search_text1, search_text2, etc.: congratulate the player for finding the correct item, and how they progressed a little more in the quest, and add something intruiging. Also see (11.) for non-used. 
+
+Double check the following: 
+enemy_spots + search_spots = 6, which means that we have a total of 6 events for the two combined (enemy and search)
+descriptive texts must be between 50 and 55 words: enemy_texts, boss_texts, texts, search_riddles, init_search_texts, search_texts
+the number of filled info must match search_spots for d_spec_locations, items, fake1items, fake2items, search_riddles, position_items, position_fake1items, position_fake2items, init_search_texts, search_texts
+the number of filled info must match enemy_spots for enemy_texts, tags
+
+Warning: always use "" for strings, as English text uses a lot of apostrophes (it's, don't).
+
+ALL TEXTS MUST BE between 50 and 55 words AND WRITE THE CHARACTER NuMBER IN COMMENT !!!

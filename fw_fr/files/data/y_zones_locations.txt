@@ -1,0 +1,48 @@
+# Zones
+neighbor
+school
+grocerie
+library
+parc
+
+# Locations
+home
+pub
+foot
+school 
+schoolyard
+barber
+fire
+tiger
+daycare
+ed
+dep
+iga
+pharm
+ctire
+staples
+library
+police
+skate
+watergames
+baseball
+pirateparc
+
+ami1
+ami2
+ami3
+
+# details
+school is the school entrance
+fire is the sirestation
+tiger is kind of a dollar store whose front is a tiger
+ed is a pawn shop
+dep is a quick emart
+iga is a grocery store
+pharm is a pharmacy
+ctire is canadian tire, a house/construction shop
+skate is a skatepark
+watergames are in the parc
+baseball is a baseball field
+pirate parc is a pirate-themed children parc
+ami1, ami2 and ami3 are the houses of 3 friends of the player
