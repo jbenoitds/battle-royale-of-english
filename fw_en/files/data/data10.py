@@ -1,0 +1,110 @@
+# Ultimate Mission quest. Written by hand (Bundle 5, 2026-10-25) to be coherent with the map:
+# each riddle describes what you see at the place, the hints point to the right zone, the boss waits at 'boss_location'.
+# Rules: 'search_spots' <= 4; data_id = 2 digits and the file must be named data<id>.py; locations/zones = modulesu/locations_coordinates.py;
+# items = file names in files/items; enemies = files/new_enemies (<group><number>), tags = sound groups in files/sound_enemy.
+
+data_all_else = {'data_id': 10,
+ 'quest_title': 'The Quest of the Stinky Feet',
+ 'enemy_spots': 3,
+ 'boss': 'ju1',
+ 'enemy1': 'ju2',
+ 'enemy2': 'ju3',
+ 'enemy3': 'ju4',
+ 'enemy4': 'ju5',
+ 'enemy5': 'ju6',
+ 'search_spots': 2,
+ 'decoy': 'taehc',
+ 'edoc': 'savons',
+ 'd_trap_pool': 'library',
+ 'd_shield_pool': 'parc',
+ 'd_search_pool': 'school',
+ 'd_enemy_pool': 'school',
+ 'd_boss_pool': 'grocerie',
+ 'boss_location': 'grocery',
+ 'd_spec_location1': 'hardware',
+ 'item1': 'bucket',
+ 'fake1item1': 'hammer',
+ 'fake2item1': 'broom',
+ 'position_item1': (330, 330),
+ 'position_fake1item1': (520, 300),
+ 'position_fake2item1': (720, 340),
+ 'd_spec_location2': 'watergames',
+ 'item2': 'sponge',
+ 'fake1item2': 'shoe',
+ 'fake2item2': 'hat',
+ 'position_item2': (720, 320),
+ 'position_fake1item2': (330, 340),
+ 'position_fake2item2': (520, 300),
+ 'd_spec_location3': 'none',
+ 'item3': 'none',
+ 'fake1item3': 'none',
+ 'fake2item3': 'none',
+ 'position_item3': (520, 330),
+ 'position_fake1item3': (720, 300),
+ 'position_fake2item3': (330, 320),
+ 'd_spec_location4': 'none',
+ 'item4': 'none',
+ 'fake1item4': 'none',
+ 'fake2item4': 'none',
+ 'position_item4': (330, 330),
+ 'position_fake1item4': (520, 300),
+ 'position_fake2item4': (720, 340),
+ 'd_spec_location5': 'none',
+ 'item5': 'none',
+ 'fake1item5': 'none',
+ 'fake2item5': 'none',
+ 'position_item5': (720, 320),
+ 'position_fake1item5': (330, 340),
+ 'position_fake2item5': (520, 300),
+ 'tag1': 'ju',
+ 'tag2': 'ju',
+ 'tag3': 'ju',
+ 'tag4': 'ju',
+ 'tag5': 'ju',
+ 'tagboss': 'ju'}
+
+data_all_texts = {'enemy_text1': "BECAUSE I'M BATMAN !!! I lost the Batmobile keys and no Batbus comes here, so I'm Batwalking and I'm Batexhausted. And I protect Superman, "
+                "even if his feet stink! (Ctrl + 1, 2 or 3, then '1.', '2.' or '3.' and the sentence)",
+ 'enemy_text2': "I'm Cyborg, a super handy robot: 3 + 2 = 3 + 2! I'm half human, so I can say the alphabet while burping. My nose is 100% robot: I can't smell "
+                "Superman's feet! (Ctrl + 1, 2 or 3, then '1.', '2.' or '3.' and the sentence)",
+ 'enemy_text3': "Look how fast I run! Phew! Did you see? No? That's because I'm the Flash and I run super fast... even faster than the smell of Superman's "
+                "feet! (Ctrl + 1, 2 or 3, then '1.', '2.' or '3.' and the sentence)",
+ 'enemy_text4': "Aquaman comes out of the water: he's used to fishy smells, so Superman's feet don't scare him! (Ctrl + 1, 2 or 3, then '1.', '2.' or '3.' and "
+                'the sentence)',
+ 'enemy_text5': "Wonder Woman spins her lasso: she wants to protect Superman... while holding her nose. (Ctrl + 1, 2 or 3, then '1.', '2.' or '3.' and the "
+                'sentence)',
+ 'boss_text': "I'm Super, I'm a Man, I'm SUPERMAN! I have a red cape, I wear my underwear over my pants, and my boots, I take them off whenever I want! (Ctrl "
+              "+ 1, 2 or 3, then '1.', '2.' or '3.' and the sentence)",
+ 'boss_netext': "NOOOOOOOOO, YOU are the real SuperFighter! Okay, okay... pass me the bucket and the sponge, I'll wash my feet.",
+ 'enemy_position': "I know, miss, it's 12! What? The answer was Jacques Cartier? (Psst... Superman's friends are hiding around the school.)",
+ 'boss_position': 'Quick, I need soap and toilet paper! Superman is shopping at the supermarket, in front of the big front door.',
+ 'text_all': "Superman took off his boots and his feet stink so much that the whole neighbourhood is fainting! 1) find a bucket and a sponge ('clue1', "
+             "'clue2'); 2) beat his Justice League friends near the school; 3) face Superman at the supermarket.",
+ 'text_1': "Still to do: 1) find a bucket and a sponge ('clue1', 'clue2').",
+ 'text_2': 'Still to do: 2) beat his Justice League friends near the school.',
+ 'text_3': 'Still to do: 3) face Superman at the supermarket.',
+ 'text_12': "Still to do: 1) find a bucket and a sponge ('clue1', 'clue2'); 2) beat his Justice League friends near the school.",
+ 'text_13': "Still to do: 1) find a bucket and a sponge ('clue1', 'clue2'); 3) face Superman at the supermarket.",
+ 'text_23': 'Still to do: 2) beat his Justice League friends near the school; 3) face Superman at the supermarket.',
+ 'text_finish': 'Superman finally washes his feet. The neighbourhood wakes up and can breathe again. Mission complete!',
+ 'search_riddle1': 'Clue 1: Find the big store that sells tools, paint and tires. Above the door: a red triangle with a maple leaf. What you need to carry '
+                   'water is waiting for you there.',
+ 'init_search_text1': "You're at the hardware store. Three objects in front of you: which one can carry enough water to wash stinky feet? Type its name then "
+                      'Enter.',
+ 'search_text1': "That's the bucket! But it's stuck behind a magic padlock. Listen to the sentence with Ctrl + 1 and type it to free it.",
+ 'search_riddle2': 'Clue 2: In the park, water jets shoot out of the ground, next to a giant anchor and a sail. Here you get wet while having fun... and '
+                   'someone left something for scrubbing.',
+ 'init_search_text2': "You're at the splash pad. Three objects are lying on the ground: which one is soft, yellow and green, and scrubs really well? Type its "
+                      'name then Enter.',
+ 'search_text2': "The sponge! It's soaking wet and slips through your fingers. Listen to the sentence with Ctrl + 1 and type it to catch it.",
+ 'search_riddle3': '',
+ 'init_search_text3': '',
+ 'search_text3': '',
+ 'search_riddle4': '',
+ 'init_search_text4': '',
+ 'search_text4': '',
+ 'search_riddle5': '',
+ 'init_search_text5': '',
+ 'search_text5': ''}
+
+data_all = {**data_all_else, **data_all_texts}

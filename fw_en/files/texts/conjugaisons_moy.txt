@@ -1,0 +1,18 @@
+To be in the present (with he); I am you are he is we are
+To be in the past (with she); I was you were she was we were
+To be in the future (with he); I will be you will be he will be we will be
+To have in the present (with she); I have you have she has we have
+To have in the past (with he); I had you had he had we had
+To have in the future (with she); I will have you will have she will have we will have
+To go in the present (with he); I go you go he goes we go
+To go in the past (with she); I went you went she went we went
+To go in the future (with he); I will go you will go he will go we will go
+To do in the present (with she); I do you do she does we do
+To do in the past (with he); I did you did he did we did
+To do in the future (with she); I will do you will do she will do we will do
+To want in the present (with he); I want you want he wants we want
+To want in the past (with she); I wanted you wanted she wanted we wanted
+To want in the future (with he); I will want you will want he will want we will want
+To come in the present (with she); I come you come she comes we come
+To come in the past (with he); I came you came he came we came
+To come in the future (with she); I will come you will come she will come we will come

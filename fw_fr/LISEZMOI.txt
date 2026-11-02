@@ -1,0 +1,182 @@
+BATAILLE ROYALE DU FRANÇAIS
+===========================
+
+Un petit jeu fait maison pour s'entraîner à écrire en français en s'amusant.
+On écoute une phrase, on la tape sans faute, et on avance dans l'aventure :
+pièges, boucliers d'énergie, combats contre des personnages et une mission
+finale dans un quartier.
+
+Projet de fan gratuit et non commercial. Sans lien avec Epic Games (Fortnite),
+Google, Nintendo, Pokémon, Roblox, Marvel, DC, Lucasfilm ou qui que ce soit.
+Les personnages, images, sons et marques appartiennent à leurs propriétaires.
+(Dans le menu, tapez 'credits' pour voir cet avertissement dans le jeu.)
+
+
+1. CE QU'IL FAUT
+----------------
+- Un ordinateur avec Python 3 (version 3.10 ou plus récente) : https://www.python.org
+- Deux modules Python, à installer une seule fois. Dans un terminal (Invite de
+  commandes sous Windows), tapez :
+      pip install pygame gtts
+- Internet, pour la voix qui lit les phrases (Google Text-to-Speech).
+  Sans Internet, le jeu marche quand même, mais sans la voix.
+- Des haut-parleurs ou un casque.
+
+
+2. LANCER LE JEU
+----------------
+Le jeu doit être lancé depuis son propre dossier (celui qui contient ce fichier) :
+      cd "chemin/vers/fw_fr"
+      python zz_batroy.py
+
+Astuce Windows : dans l'Explorateur, ouvrez le dossier du jeu, tapez cmd dans
+la barre d'adresse, appuyez sur Entrée, puis tapez : python zz_batroy.py
+
+
+3. LE MENU
+----------
+Tapez votre choix puis appuyez sur Entrée :
+  1        Niveau 1 - Intro et commandes
+  2        Niveau 2 - Mouvements et événements
+  3        Niveau 3 - Combats et objectifs
+  4        Niveau 4 - Mission Ultime (dans un quartier), quête surprise
+  4a, 4b.. Niveau 4 avec la quête de votre choix (la liste des quêtes est
+           affichée sur l'image du menu, sous le bouton du niveau 4)
+  go       reprendre la Mission Ultime là où vous l'aviez laissée
+  credits  crédits et avertissement
+  exit     quitter le jeu
+
+
+4. COMMENT ON JOUE
+------------------
+Partout dans le jeu : on tape au clavier, puis on appuie sur Entrée.
+Les accents comptent (é, è, à, ç...) : c'est un jeu d'écriture !
+
+Écouter une phrase : maintenez Ctrl et appuyez sur 1 (Ctrl + 1).
+Quand il y a plusieurs phrases, c'est Ctrl + 2, Ctrl + 3, etc.
+Bip-bip ! = le mot que vous venez de taper est faux : chaque fois que vous
+appuyez sur la barre d'espace, le jeu vérifie le dernier mot. Corrigez-le
+(touche Retour arrière) avant de continuer.
+Mip-mip ! (combats) = vous avez oublié le numéro de l'arme (1., 2. ou 3.).
+
+Les niveaux 2, 3 et 4 commencent par une page qui explique les commandes du
+niveau. Appuyez sur une touche pour commencer. En jeu, tapez 'info' puis
+Entrée pour les revoir.
+
+NIVEAU 1 - Intro et commandes
+  Écoutez la phrase (Ctrl + 1, puis Ctrl + 2, 3 et 4) et tapez-la sans faute
+  pour débloquer chaque action.
+
+NIVEAU 2 - Mouvements et événements
+  Vous êtes enfermé dans le Lavish Lair. Trouvez la carte où est écrit le code
+  de la porte, puis revenez à l'entrée et tapez ce code pour sortir.
+    avant / gauche / droite / arrière   se déplacer
+    fouiller     chercher un objet là où vous êtes (la carte n'apparaît
+                 qu'une fois tous les pièges et boucliers désactivés)
+    info         afficher les commandes à l'écran ('info' encore : l'objectif)
+    mission      revoir l'objectif
+    quitter      revenir au menu
+  Piège : tapez la phrase entendue pour vous libérer.
+  Bouclier d'énergie : tapez la phrase pour passer (Échap pour reculer).
+
+NIVEAU 3 - Combats et objectifs
+  En sortant du Lavish Lair : trouvez les clés de la voiture (à la
+  bibliothèque) et un Nuka-Cola bien frais (aux cuisines), puis tapez le code
+  des clés à l'entrée (le point de départ).
+    mêmes commandes qu'au niveau 2 (avant, gauche, droite, arrière, fouiller,
+    info, mission, quitter)
+  Combats : écoutez une phrase avec Ctrl + 1, 2 ou 3, puis tapez le numéro de
+  l'arme suivi de la phrase, par exemple :   1. le chat dort
+    1.  pistolet      (petite phrase,   -1 vie, 2 balles)
+    2.  mitraillette  (phrase moyenne,  -2 vies)
+    3.  shotgun       (grande phrase,   -3 vies, 1 cartouche)
+
+NIVEAU 4 - Mission Ultime
+  Une quête dans un quartier, différente à chaque partie (4 quêtes, tirées
+  au hasard sans répétition ; ou choisissez-la au menu avec 4a, 4b, 4c, 4d) :
+  trouver un ou deux objets grâce aux énigmes,
+  battre trois ennemis, puis le chef (attention aux pièges et aux boucliers).
+    Flèches du clavier   haut = avancer, gauche / droite = tourner,
+    ou W A S D           bas = demi-tour (W = avancer, A / D = tourner,
+                         S = demi-tour ; on bouge dès qu'on appuie)
+    fouiller   chercher un objet          titre    nom de la quête
+    énigme1    relire l'énigme 1          énigme2  relire l'énigme 2
+    ennemi     indice sur les ennemis     chef     indice sur le chef
+    ville      afficher / cacher le plan de la ville (la flèche rouge, c'est
+               vous ; on ne bouge pas tant qu'il est ouvert, Échap le ferme)
+    info       afficher / cacher les commandes
+    quitter    sauvegarder et revenir au menu (puis 'go' dans le menu pour
+               reprendre la partie)
+  Au bon endroit, tapez 'fouiller' : trois objets apparaissent. Tapez le nom
+  du bon objet en français (par exemple « seau » ou « le seau »), puis la
+  phrase entendue avec Ctrl + 1 pour le récupérer.
+  Conjugaison (Everest et le chef) : Ctrl + 1, 2 ou 3 donne un verbe et un
+  temps. Tapez le numéro de l'arme, puis le verbe conjugué avec :
+    1.  je et tu                                 1. je suis tu es
+    2.  je, tu, il/elle, nous                    2. je suis tu es il est nous sommes
+    3.  je, tu, il/elle, nous, vous, ils/elles   (la voix dit il ou elle)
+  Everest, la chienne : tapez 'evy' et réussissez une conjugaison pour la
+  charger (3 fois par mission), puis devant un ennemi ou le chef tapez
+  e. attaque  pour la lâcher : elle le dévore d'une bouchée.
+  Le chef revient à la vie une fois : achevez-le avec une conjugaison.
+
+
+5. SI QUELQUE CHOSE NE MARCHE PAS
+---------------------------------
+- "No module named pygame" (ou gtts) : refaites  pip install pygame gtts
+- Pas de voix : vérifiez la connexion Internet et le volume. Le jeu continue
+  sans la voix si Google ne répond pas.
+- "No such file or directory: 'files/...'" : le jeu n'a pas été lancé depuis
+  son dossier. Faites d'abord  cd  vers le dossier du jeu.
+- Pendant un combat, on ne peut pas quitter le niveau : terminez le combat, ou
+  fermez la fenêtre pour quitter le jeu.
+
+
+6. POUR LES PARENTS ET LES ENSEIGNANTS : CHANGER LES PHRASES
+-------------------------------------------------------------
+Les phrases à écouter et à taper sont de simples fichiers texte, faciles à
+adapter, par exemple à la liste de mots de la semaine.
+
+Où sont-elles ?  Dans le dossier  files/texts/  :
+  phrases_pet.txt         phrases courtes   (niveau 3 : pistolet ; niveau 4)
+  phrases_moy.txt         phrases moyennes  (niveaux 2, 3 et 4 : pièges,
+                                             boucliers, fouilles, mitraillette)
+  phrases_gde.txt         phrases longues   (niveau 3 : shotgun ; niveau 4)
+  conjugaisons_pet.txt    conjugaisons      (niveau 4 : Everest et le chef)
+  conjugaisons_moy.txt    conjugaisons      (idem)
+  conjugaisons_gde.txt    conjugaisons      (idem)
+Les phrases du niveau 1 sont fixes (dans z_lvl1.py).
+
+Comment faire ?
+  1. Fermez le jeu.
+  2. Faites une copie du fichier (au cas où), puis ouvrez-le avec le
+     Bloc-notes (clic droit > Ouvrir avec > Bloc-notes).
+  3. Une phrase par ligne. Modifiez, ajoutez ou remplacez des lignes.
+  4. Enregistrez (Fichier > Enregistrer, encodage UTF-8, celui par défaut).
+  Le jeu tire les phrases au hasard à chaque partie.
+
+Les règles à respecter :
+  - Au moins 48 lignes dans chaque phrases_*.txt et 18 dans chaque
+    conjugaisons_*.txt (le niveau 4 en utilise autant). Vous pouvez en mettre
+    plus. Les lignes vides sont ignorées.
+  - Écrivez exactement ce que l'enfant doit taper : les accents comptent.
+    Majuscules : pas grave, le jeu les ignore.
+  - Évitez la ponctuation (points, virgules, points d'exclamation) : il
+    faudrait la taper aussi. Les apostrophes (j'ai, l'école) sont permises.
+  - Conjugaisons : ce que la voix annonce, un point-virgule, puis ce qu'il
+    faut taper. Exemple :
+        Avoir au présent au féminin; j'ai tu as elle a
+  - Gardez la même longueur que les autres phrases du fichier (courte,
+    moyenne ou longue) : la difficulté du jeu en dépend.
+
+Les « mots de la semaine » du niveau 4 (phrases des pièges et des boucliers)
+sont deux lignes du fichier z_lvlu.py : ouvrez-le avec le Bloc-notes,
+cherchez (Ctrl + F) « Mots de la semaine » et changez le texte entre les
+guillemets.
+
+7. POUR ALLER PLUS LOIN : LES QUÊTES DU NIVEAU 4
+-----------------------------------------------
+Chaque quête est un fichier  files/data/dataNN.py  (data10 à data13). Pour en
+créer une, copiez une quête existante, donnez-lui un nouveau numéro à deux
+chiffres (fichier data14.py avec 'data_id': 14) et changez les textes, les
+lieux et les objets. Les règles sont écrites en haut de chaque fichier.

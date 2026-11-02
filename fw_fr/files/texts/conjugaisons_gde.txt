@@ -1,0 +1,18 @@
+Être au présent au masculin; je suis tu es il est nous sommes vous êtes ils sont
+Être à l'imparfait au féminin; j'étais tu étais elle était nous étions vous étiez elles étaient
+Être au futur simple au masculin; je serai tu seras il sera nous serons vous serez ils seront
+Avoir au présent au féminin; j'ai tu as elle a nous avons vous avez elles ont
+Avoir à l'imparfait au masculin; j'avais tu avais il avait nous avions vous aviez ils avaient
+Avoir au futur simple au féminin; j'aurai tu auras elle aura nous aurons vous aurez elles auront
+Aller au présent au masculin; je vais tu vas il va nous allons vous allez ils vont
+Aller à l'imparfait au féminin; j'allais tu allais elle allait nous allions vous alliez elles allaient
+Aller au futur simple au masculin; j'irai tu iras il ira nous irons vous irez ils iront
+Faire au présent au féminin; je fais tu fais elle fait nous faisons vous faites elles font
+Faire à l'imparfait au masculin; je faisais tu faisais il faisait nous faisions vous faisiez ils faisaient
+Faire au futur simple au féminin; je ferai tu feras elle fera nous ferons vous ferez elles feront
+Vouloir au présent au masculin; je veux tu veux il veut nous voulons vous voulez ils veulent
+Vouloir à l'imparfait au féminin; je voulais tu voulais elle voulait nous voulions vous vouliez elles voulaient
+Vouloir au futur simple au masculin; je voudrai tu voudras il voudra nous voudrons vous voudrez ils voudront
+Venir au présent au féminin; je viens tu viens elle vient nous venons vous venez elles viennent
+Venir à l'imparfait au masculin; je venais tu venais il venait nous venions vous veniez ils venaient
+Venir au futur simple au féminin; je viendrai tu viendras elle viendra nous viendrons vous viendrez elles viendront

@@ -1,0 +1,92 @@
+#Characters group
+av: avengers
+co: cowboys
+dr: dragon ball z
+he: my hero academia
+ju: justice league
+na: naruto
+on: one piece
+pi: pirates
+po: pokemon
+ro: roblox
+
+#Characters name
+Avengers
+av1: Hulk
+av2: Captain America
+av3: Spiderman
+av4: Black Panther
+av5: Ironman
+av6: Thor
+
+Cowboys
+co1: Lucky Luke
+co2: random cowboy1
+co3: random cowboy2
+co4: rodeo cowboy
+co5: dallas cowboy
+co6: random cowboy3
+
+Dragon Ball z
+db1: the dragon
+db2: Piccolo
+db3: Sangoku
+db4: Vegeta
+db5: Beerus
+db6: Freezer
+
+My Hero Academia
+he1: Izuku
+he2: Shoto 1
+he3: Ochako
+he4: Tamura
+he5: Red Riot
+he6: Allmight
+
+Justice League
+ju1: Superman
+ju2: Batman
+ju3: Cyborg
+ju4: Flash
+ju5: Aquaman
+ju6: Wonder Woman
+
+Naruto
+na1: Naruto
+na2: Minato
+na3: Sakura
+na4: Garra
+na5: Tobi
+na6: Itachi
+
+One Piece
+on1: Luffi
+on2: Boa Hancock
+on3: Ronoa Zoro 
+on4: Ace
+on5: Trafalgar
+on6: Franky
+
+Pirates
+pi1: Jack Sparrow
+pi2: random pirate 1
+pi3: random pirate 2
+pi4: cartoon pirate
+pi5: Skeleton pirate
+pi6: Old Pirate
+
+pokemon
+po1: Pikachu
+po2: Carapuce
+po3: Psykokwak
+po4: Bulbizar
+po5: Miaousse
+po6: Salamèche
+
+Roblox
+ro1: Beacon
+ro2: Blondinet
+ro3: Ninja
+ro4: Magicien
+ro5: Robot de carton
+ro6: Gangster
